@@ -5,13 +5,13 @@ each instance variable. In addition, provide a method named getBookInfo that ret
 the book as a String.*/
 
 public class Book {
-    // Instance variables
+    
     private String bookName;
     private String isbnNumber;
     private String authorName;
     private String publisher;
 
-    // Constructor to initialize the instance variables
+    
     public Book(String bookName, String isbnNumber, String authorName, String publisher) {
         this.bookName = bookName;
         this.isbnNumber = isbnNumber;
@@ -19,7 +19,7 @@ public class Book {
         this.publisher = publisher;
     }
 
-    // Setter and Getter for bookName
+  
     public void setBookName(String bookName) {
         this.bookName = bookName;
     }
@@ -28,7 +28,7 @@ public class Book {
         return bookName;
     }
 
-    // Setter and Getter for isbnNumber
+    
     public void setIsbnNumber(String isbnNumber) {
         this.isbnNumber = isbnNumber;
     }
@@ -37,7 +37,7 @@ public class Book {
         return isbnNumber;
     }
 
-    // Setter and Getter for authorName
+  
     public void setAuthorName(String authorName) {
         this.authorName = authorName;
     }
@@ -46,7 +46,7 @@ public class Book {
         return authorName;
     }
 
-    // Setter and Getter for publisher
+ 
     public void setPublisher(String publisher) {
         this.publisher = publisher;
     }
@@ -55,7 +55,7 @@ public class Book {
         return publisher;
     }
 
-    // Method to return book information as a String
+   
     public String getBookInfo() {
         return "Book Name: " + bookName + 
                "\nISBN Number: " + isbnNumber + 
@@ -64,13 +64,13 @@ public class Book {
     }
 
     public static void main(String[] args) {
-        // Create a Book object
+       
         Book book = new Book("Effective Java", "978-0134686097", "Joshua Bloch", "Addison-Wesley");
 
-        // Display book information
+      
         System.out.println(book.getBookInfo());
 
-        // Update and display book information
+       
         book.setAuthorName("Joshua J. Bloch");
         System.out.println("\nUpdated Author: " + book.getAuthorName());
         System.out.println(book.getBookInfo());
