@@ -2,14 +2,14 @@
 in banks A, B and C respectively. &#39;BankA&#39;, &#39;BankB&#39; and &#39;BankC&#39; are subclasses of class &#39;Bank&#39;, each
 having a method named &#39;getBalance&#*/
 
-// Abstract class
+ 
 abstract class Bank {
     abstract int getBalance();
 }
 
-// Subclass for BankA
+ 
 class BankA extends Bank {
-    private int balance = 100; // Amount deposited in Bank A
+    private int balance = 100; 
 
     @Override
     int getBalance() {
@@ -17,10 +17,9 @@ class BankA extends Bank {
     }
 }
 
-// Subclass for BankB
+ 
 class BankB extends Bank {
-    private int balance = 150; // Amount deposited in Bank B
-
+    private int balance = 150;  
     @Override
     int getBalance() {
         return balance;
@@ -28,9 +27,9 @@ class BankB extends Bank {
 }
 /*
 
-// Subclass for BankC
+ 
 class BankC extends Bank {
-    private int balance = 200; // Amount deposited in Bank C
+    private int balance = 200; 
 
     @Override
     int getBalance() {
@@ -38,7 +37,7 @@ class BankC extends Bank {
     }
 }
 
-// Example usage
+ 
 public class Main {
     public static void main(String[] args) {
         Bank[] banks = { new BankA(), new BankB(), new BankC() };
