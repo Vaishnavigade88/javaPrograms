@@ -11,14 +11,13 @@ public class IntegerDivision {
         try {
             System.out.print("Enter the first number (Num1): ");
             String inputNum1 = scanner.nextLine();
-            int num1 = Integer.parseInt(inputNum1); // Throws NumberFormatException if not an integer
-
+            int num1 = Integer.parseInt(inputNum1); 
             System.out.print("Enter the second number (Num2): ");
             String inputNum2 = scanner.nextLine();
-            int num2 = Integer.parseInt(inputNum2); // Throws NumberFormatException if not an integer
+            int num2 = Integer.parseInt(inputNum2);  
 
-            // Perform the division
-            int result = num1 / num2; // Throws ArithmeticException if num2 is zero
+         
+            int result = num1 / num2;  
             System.out.println("Result of " + num1 + " / " + num2 + " = " + result);
 
         } catch (NumberFormatException e) {
@@ -28,7 +27,7 @@ public class IntegerDivision {
         } catch (Exception e) {
             System.out.println("An unexpected error occurred: " + e.getMessage());
         } finally {
-            scanner.close(); // Close the scanner
+            scanner.close();  
         }
     }
 }
