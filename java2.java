@@ -1,4 +1,4 @@
-//Develop a Java application to generate Electricity bill. Create a class with the following members:
+ 
 Consumer no., consumer name, previous month reading, current month reading, and type of EB
 connection (i.e. domestic or commercial). Compute the bill amount using the user defined tariff.
 
@@ -9,7 +9,7 @@ class ElectricityBill {
     private String consumerName;
     private double previousReading;
     private double currentReading;
-    private String connectionType; // Domestic or Commercial
+    private String connectionType;  
 
     public ElectricityBill(String consumerNo, String consumerName, double previousReading, double currentReading, String connectionType) {
         this.consumerNo = consumerNo;
@@ -19,16 +19,16 @@ class ElectricityBill {
         this.connectionType = connectionType;
     }
 
-    // Method to calculate bill
+  
     public double calculateBill() {
         double unitsConsumed = currentReading - previousReading;
         double tariff;
 
-        // Define tariff based on connection type
+   
         if (connectionType.equalsIgnoreCase("domestic")) {
-            tariff = 5.0; // Example rate for domestic
+            tariff = 5.0; 
         } else if (connectionType.equalsIgnoreCase("commercial")) {
-            tariff = 10.0; // Example rate for commercial
+            tariff = 10.0;  
         } else {
             System.out.println("Invalid connection type.");
             return 0;
@@ -68,10 +68,9 @@ public class ElectricityBillApp {
         System.out.print("Enter Type of EB Connection (Domestic/Commercial): ");
         String connectionType = scanner.next();
 
-        // Create an ElectricityBill object
+    
         ElectricityBill bill = new ElectricityBill(consumerNo, consumerName, previousReading, currentReading, connectionType);
 
-        // Display the bill
         bill.displayBill();
 
         scanner.close();
