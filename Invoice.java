@@ -1,8 +1,8 @@
 //Create a class called Invoice that a hardware store might use to represent an invoice for an item sold at
-the store. An Invoice should include four pieces of information as instance variables-a part
+/*the store. An Invoice should include four pieces of information as instance variables-a part
 number(type String),a part description(type String),a quantity of the item being purchased (type int) and
 a price per item (double). Your class should have a constructor that initializes the four instance variables.
-In addition, provide a method named getInvoiceAmount that calculates the invoice amount.
+In addition, provide a method named getInvoiceAmount that calculates the invoice amount.*/
 
 public class Invoice {
     private String partNumber;
