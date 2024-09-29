@@ -1,6 +1,6 @@
  
-Consumer no., consumer name, previous month reading, current month reading, and type of EB
-connection (i.e. domestic or commercial). Compute the bill amount using the user defined tariff.
+/*Consumer no., consumer name, previous month reading, current month reading, and type of EB
+connection (i.e. domestic or commercial). Compute the bill amount using the user defined tariff.*/
 
 import java.util.Scanner;
 
